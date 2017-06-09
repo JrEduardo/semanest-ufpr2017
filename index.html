@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Documentos dinâmicos</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index_files/rmdshower/node_modules/shower-material/styles/screen-16x10.css">
+  <link rel="stylesheet" href="index_files/rmdshower/style-common.css">
+  <link rel="stylesheet" href="index_files/rmdshower/style-material.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+  <script src="index_files/rmdshower/auto-render.min.js" type="text/javascript"></script>
+  
+  
+  
+            <link rel="stylesheet" href="configs/shower-style.css"/>
+      
+  
+</head>
+
+<body class="shower list">
+
+  <header class="caption">
+    <h1>Documentos dinâmicos</h1>
+    <p><p><a href="https://jreduardo.github.io">Eduardo Elias Ribeiro Junior</a><br />
+Semana da Estatística da UFPR - 2017</p></p>
+  </header>
+
+    
+  
+<section id="disponibilizacao" class="titleslide slide level1"><h2 class="shout">Disponibilização</h2></section><section id="section" class="slide level2">
+<h2></h2>
+<ul>
+<li>Repositório no GitHub <a href="https://github.com/JrEduardo/semanest-ufpr2017" class="uri">https://github.com/JrEduardo/semanest-ufpr2017</a></li>
+<li>Slides no sítio do LEG <a href="http://www.leg.ufpr.br/~eduardojr/semanest-ufpr2017" class="uri">http://www.leg.ufpr.br/~eduardojr/semanest-ufpr2017</a></li>
+</ul>
+</section><section id="referencias" class="slide level2">
+<h2>Referências</h2>
+<style>
+.myref {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+</style>
+<div class="myref">
+<p><a href="https://github.com/christophergandrud/Rep-Res-Book" target="_blank"> <img src="images/book-reproducible.jpg" width=280px> </a></p>
+</div>
+<div class="myref">
+<!-- <div class="myref" style="padding-top: 30px;"> -->
+<p><a href="https://github.com/yihui/knitr-book" target="_blank"> <img src="images/book-dynamic.jpg" width=280px> </a></p>
+</div>
+<div class="myref">
+<!-- <div class="myref" style="padding-top: 60px;"> -->
+<p><a href="https://github.com/rstudio/bookdown" target="_blank"> <img src="images/book-bookdown.jpg" width=280px> </a></p>
+</div>
+</section>
+<section id="documentos-dinamicos" class="titleslide slide level1"><h2 class="shout">Documentos dinâmicos?</h2></section><section id="fluxo-de-trabalho" class="slide level2">
+<h2>Fluxo de trabalho</h2>
+<blockquote>
+<p><strong>Dinâmico:</strong> aquele que se modifica continuamente, que evolui; que pressupõe movimento, mudança.</p>
+</blockquote>
+<p><img src="images/dynamic-report.png" width="100%" style="display: block; margin: auto;" /></p>
+</section><section id="baseado-em-uma-historia-real" class="slide level2">
+<h2>Baseado em uma história real</h2>
+<p>Josefino e sua experiência no mercado de trabalho.</p>
+<p><img src="images/small-modification.png" width="100%" style="display: block; margin: auto;" /></p>
+</section>
+<section id="documentos-dinamicos-em-r" class="titleslide slide level1"><h2 class="shout">Documentos dinâmicos em R</h2></section><section id="conceito-bastante-antigo" class="slide level2">
+<h2>Conceito bastante antigo</h2>
+<ul>
+<li><em>tangle</em> (documentos para humanos)</li>
+<li><em>weave</em> (documentos para máquinas)</li>
+<li><code>Sweave</code> (em 2002 por Friedrich Leisch)</li>
+<li><a href="http://yihui.name/">Yhui Xie</a>
+<ul>
+<li><code>knitr</code>;</li>
+<li><code>rmarkdown</code>;</li>
+<li>…</li>
+</ul></li>
+</ul>
+</section><section id="familia-down-e-agregados" class="slide level2">
+<h2>Família <code>down</code> (e agregados)</h2>
+<p><img src="images/rpackages.png" width="100%" style="display: block; margin: auto;" /></p>
+</section><section id="familia-down-e-agregados-1" class="slide level2">
+<h2>Família <code>down</code> (e agregados)</h2>
+<p><img src="images/rpackages2.png" width="100%" style="display: block; margin: auto;" /></p>
+</section>
+<section id="knitr" class="titleslide slide level1"><h2 class="shout">Knitr</h2></section><section id="section-1" class="slide level2">
+<h2></h2>
+<p><img src="images/knitr.png" width="100%" style="display: block; margin: auto;" /></p>
+</section><section id="section-2" class="slide level2">
+<h2></h2>
+<h3 id="vantagens">Vantagens</h3>
+<ul>
+<li class="fragment next">Controle sobre toda a estrutura do documento;</li>
+<li class="fragment next">A escrita é em LaTeX, portanto têm a flexibilidade do LaTeX;</li>
+<li class="fragment next">As customizações (ambientes de código, ambientes para duas colunas, etc.) são imediatas;</li>
+</ul>
+<h3 id="desvantagens">Desvantagens</h3>
+<ul>
+<li class="fragment next">A escrita é em LaTeX, portanto deve-se saber a marcação LaTeX;</li>
+<li class="fragment next">Somente arquivos em <code>.pdf</code> são gerados;</li>
+</ul>
+</section>
+<section id="rmarkdown" class="titleslide slide level1"><h2 class="shout">Rmarkdown</h2></section><section id="section-3" class="slide level2">
+<h2></h2>
+<p><img src="images/rmarkdown1.png" width="100%" style="display: block; margin: auto;" /></p>
+</section><section id="section-4" class="slide level2">
+<h2></h2>
+<p><img src="images/rmarkdown2.png" width="100%" style="display: block; margin: auto;" /></p>
+</section><section id="section-5" class="slide level2">
+<h2></h2>
+<p><img src="images/rmarkdown-example1.png" class="one-col-image"> <img src="images/rmarkdown-example2.png" class="one-col-image"></p>
+</section><section id="as-opcoes-yaml" class="slide level2">
+<h2>As opções YAML</h2>
+<ul>
+<li>Contemplam as opções interpretadas pelo <code>knitr</code> como as interpretadas pelo <code>pandoc</code>;</li>
+<li>As interpretadas pelo <code>knitr</code> referem-se as passadas ao argumento <code>output</code>;</li>
+<li>As demais opções são interpretadas diretamente pelo <code>pandoc</code>;</li>
+</ul>
+</section><section id="section-6" class="slide level2">
+<h2></h2>
+<p>O YAML de <code>doc.Rmd</code> sendo:</p>
+<pre><code>---
+output:
+  html_document:
+    toc: true
+    theme: &quot;united&quot;
+    fig_height: 6
+---</code></pre>
+<p>é interpretado pelo <code>knitr</code> como:</p>
+<pre><code>rmarkdown::render(input = doc.Rmd&#39;,
+                  output_format = html_document(
+                      toc = TRUE,
+                      theme = &quot;united&quot;,
+                      fig_height = 6))</code></pre>
+</section><section id="os-formatos-internos" class="slide level2">
+<h2>Os formatos internos</h2>
+<ul>
+<li>md_document</li>
+<li>pdf_document</li>
+<li>html_document</li>
+<li>github_document</li>
+<li>beamer_presentation</li>
+<li>ioslides_presentation</li>
+<li>odt_document</li>
+<li>rtf_document</li>
+<li>slidy_presentation</li>
+<li>word_document</li>
+</ul>
+</section><section id="formatos-por-pacotes-externos" class="slide level2">
+<h2>Formatos por pacotes externos</h2>
+<ul>
+<li><a href="https://github.com/rstudio/tufte">tufte</a>: Estilo de “folheto” proposto por Edward Tufte (<code>.html</code> e <code>.pdf</code>);</li>
+<li><a href="https://github.com/rstudio/rticles">rticles</a>: Formatos específicos para artigos (<code>.pdf</code>);</li>
+<li><a href="https://github.com/yixuan/prettydoc">prettydoc</a>: Formatos para páginas web (<code>.html</code>);</li>
+<li><a href="https://github.com/juba/rmdformats">rmdformats</a>: Formatos para páginas web (<code>.html</code>);</li>
+<li><a href="https://github.com/mangothecat/rmdshower">rmdshower</a>: Apresentações usando <code>shower</code> (<code>.html</code>);</li>
+<li><a href="https://github.com/yihui/xaringan">xaringan</a>: Apresentações usando <code>remark.js</code> (<code>.html</code>);</li>
+<li><a href="https://github.com/rstudio/revealjs">revealjs</a>: Apresentações usando <code>reveal.js</code> (<code>.html</code>);</li>
+<li><a href="https://github.com/rstudio/bookdown">bookdown</a>: Múltiplos arquivos para elaboração de documentos longos;</li>
+<li><a href="https://github.com/rstudio/blogdown">blogdown</a>: Múltiplos arquivos para elaboração de sites e blogs;</li>
+<li><a href="https://github.com/hadley/pkgdown">pkgdown</a>: Construção de páginas web para exposição de pacotes R;</li>
+</ul>
+</section><section id="section-7" class="slide level2">
+<h2></h2>
+<h3 id="vantagens-1">Vantagens</h3>
+<ul>
+<li class="fragment next">A escrita é em Markdown, portanto é muito simples;</li>
+<li class="fragment next">Portabilidade, um documento é capaz de gerar diversos formatos;</li>
+<li class="fragment next">A manutenção é fácil devido à simplicidade.</li>
+</ul>
+<h3 id="desvantagens-1">Desvantagens</h3>
+<ul>
+<li class="fragment next">A escrita é em Markdown, portanto têm a limitação do Markdown;</li>
+<li class="fragment next">As “grandes” customizações não são imediatas, deve-se editar templates ou incluir arquivos.</li>
+</ul>
+</section>
+<section id="blogdown" class="titleslide slide level1"><h2 class="shout">Blogdown</h2></section><section id="section-8" class="slide level2">
+<h2></h2>
+<ul>
+<li>Permite construir de forma muito simples blogs e sites;</li>
+<li>Utiliza o construtor de sites estáticos <a href="https://gohugo.io/">Hugo</a>.</li>
+</ul>
+</section><section id="criando-um-siteblog" class="slide level2">
+<h2>Criando um site/blog</h2>
+<ol type="1">
+<li>Instale o <code>blogdown</code>;</li>
+<li>Instale o gerador <code>hugo</code>;</li>
+<li>Escolha um tema <a href="http://themes.gohugo.io/" class="uri">http://themes.gohugo.io/</a> (isso pode demorar muito!);</li>
+<li>Edite suas páginas;</li>
+<li>Tenha um servidor para disponibilização*</li>
+</ol>
+</section><section id="a-estrutura-de-um-site-com-blogdown" class="slide level2">
+<h2>A estrutura de um site com <code>blogdown</code></h2>
+<pre><code>
+.
+└── meusite
+    ├── config.[yaml, toml]
+    ├── content
+    ├── layouts
+    ├── public
+    └── themes</code></pre>
+</section><section id="exemplos" class="slide level2">
+<h2>Exemplos</h2>
+<ul>
+<li><a href="https://jreduardo.github.io/" class="uri">https://jreduardo.github.io/</a></li>
+<li><a href="http://curso-r.com/" class="uri">http://curso-r.com/</a></li>
+<li><a href="https://yihui.name/" class="uri">https://yihui.name/</a></li>
+</ul>
+</section>
+<section id="git-e-github" class="titleslide slide level1"><h2 class="shout">Git e GitHub</h2></section><section id="sistema-de-versionamento-git" class="slide level2">
+<h2>Sistema de versionamento Git</h2>
+<p><img src="images/thesis-funny.gif" width="50%" style="display: block; margin: auto;" /></p>
+</section><section id="servico-de-hospedagem-e-ambiente-colaborativo-github" class="slide level2">
+<h2>Serviço de hospedagem e ambiente colaborativo GitHub</h2>
+<p><img src="images/github.png" width="85%" style="display: block; margin: auto;" /></p>
+</section><section id="por-que-gitgithub-sao-importantes" class="slide level2">
+<h2>Por que Git/GitHub são importantes ?</h2>
+<ul>
+<li>Atualmente a maioria dos pacotes em R são desenvolvidos sob versionamento Git e hospedados no GitHub;</li>
+<li>Pode-se ser acesso não só ao código-fonte, como também à trajetória de desenvolvimento (novas características, correções de <em>bugs</em>, melhoria de desempenho, etc.);</li>
+<li>Problemas com o pacote podem ser relatados nas <em>issues</em>, inclusive o seu problema já pode ter sido indicado por outras pessoas;</li>
+<li>Caso queria você pode facilmente <em>clonar</em> o repositório de um pacote e modificá-lo como quiser.</li>
+</ul>
+</section><section id="por-que-github" class="slide level2">
+<h2>Por que GitHub?</h2>
+<ul>
+<li>É o sistema mais usado para armazenamento e desenvolvimento colaborativo deprojetos versionados com Git;</li>
+<li>A interface permite acompanhar projetos;</li>
+<li>Não tem limitação de repositórios abertos (para os privados deve-se adquirir um plano);</li>
+<li>Lhe concede um espaço no servidor para criar páginas web de seus projetos (agora já temos onde hospedar nosso site).</li>
+</ul>
+</section>
+<section id="coisas-a-se-estudar" class="titleslide slide level1"><h2 class="shout">Coisas a se estudar</h2></section><section id="section-9" class="slide level2">
+<h2></h2>
+<ul>
+<li>Integração contínua com GitHub (<a href="https://travis-ci.org/">travis.ci</a>)</li>
+<li>Aplicativos com <a href="http://shiny.rstudio.com/">Shiny</a></li>
+<li>Documentos com <a href="http://rmarkdown.rstudio.com/flexdashboard/">flexdashboard</a></li>
+</ul>
+</section>
+<section id="obrigado" class="titleslide slide level1"><h2 class="shout">Obrigado</h2></section></section>
+
+  <!--
+  To hide progress bar from entire presentation
+  just remove “progress” element.
+  -->
+  <!-- <div class="progress"></div> -->
+  <script src="index_files/rmdshower/node_modules/shower/node_modules/shower-core/shower.min.js"></script>
+  <!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+  <!-- Photos by John Carey, fiftyfootshadows.net -->
+
+    <script>renderMathInElement(document.body);</script>
+  
+  
+</body>
+</html>
